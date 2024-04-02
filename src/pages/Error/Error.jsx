@@ -34,7 +34,7 @@ export default function Error() {
                   <use href={`${sprite}#logo-error`}></use>
                 </SvgIcon>
 
-                <TitleLogoP>PowerPulse</TitleLogoP>
+                <TitleLogoP>FitFlow</TitleLogoP>
               </LogoLink>
             </LogoWrapDiv>
 

@@ -47,7 +47,7 @@ export function Welcome() {
   return (
     <ContainerDiv>
       <TitleH1>
-        Transforming your <Span>body</Span> shape with Power Pulse
+        Transforming your <Span>body</Span> shape with FitFlow
       </TitleH1>
 
       <ButtonWrapperDiv>
