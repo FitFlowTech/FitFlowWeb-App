@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import TitlePage from 'components/common/TitlePage/TitlePage';
 import DayDashboard from 'components/diary/DayDashboard/DayDashboard';
 import DayExercises from 'components/diary/DayExercises/DayExercises';
-import DayProducts from 'components/diary/DayProducts/DayProducts';
+// import DayProducts from 'components/diary/DayProducts/DayProducts';
 import DaySwitch from 'components/diary/DaySwitch/DaySwitch';
 import {
   ContentWrapperDiv,
@@ -88,11 +88,7 @@ export function Diary() {
           diaryExercises={diaryExercises}
         />
         <DayStatisticWrapperDiv>
-          <DayProducts
-            isLoading={isDiaryLoading}
-            setDiaryProducts={setDiaryProducts}
-            diaryProducts={diaryProducts}
-          />
+        
 
           <DayExercises
             isLoading={isDiaryLoading}

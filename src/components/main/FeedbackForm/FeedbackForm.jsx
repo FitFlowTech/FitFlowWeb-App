@@ -21,7 +21,7 @@ import {
 import { selectUserEmail, selectUserName } from 'src/redux/auth/selectors';
 import { feedbackFormSchema } from './YupValidationForm';
 import Loader from '../../Loader/Loader';
-import BasicModalWindow from '../../common/BasicModalWindow/BasicModalWindow';
+// import BasicModalWindow from '../../common/BasicModalWindow/BasicModalWindow';
 import ErrorMessage from '../../common/ErrorMessage/ErrorMessage';
 
 const InputFeedback = props => {

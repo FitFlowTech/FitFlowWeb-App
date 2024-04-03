@@ -8,7 +8,7 @@ export default function Logo() {
         <use href={`${sprite}#logo`}></use>
       </SvgIcon>
 
-      <TitleP>PowerPulse</TitleP>
+      <TitleP>FitFLow</TitleP>
     </LogoLink>
   );
 }
