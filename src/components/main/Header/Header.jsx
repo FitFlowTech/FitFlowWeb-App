@@ -69,11 +69,11 @@ export default function Header() {
    *
    * @param {Object} event Object of event triggered the function call
    */
-  const handleBackdropClick = event => {
-    if (event.target === event.currentTarget) {
-      setOpenedModal(false);
-    }
-  };
+  // const handleBackdropClick = event => {
+  //   if (event.target === event.currentTarget) {
+  //     setOpenedModal(false);
+  //   }
+  // };
 
   return (
     <BoxHeader logged={isLogged}>
@@ -83,8 +83,7 @@ export default function Header() {
         {isLogged && (
           <>
             {isDesktop && <UserNav />}
-            <UserBar />
-            <CalendarDiv />
+        
             {isDesktop && <LogOutBtn />}
             {!isDesktop && <BurgerBtn setOpenedModal={setOpenedModal} />}
             <BurgerMenu
@@ -99,10 +98,10 @@ export default function Header() {
               classNames="backdrop"
               unmountOnExit
             >
-              <BackdropDiv
+              {/* <BackdropDiv
                 ref={nodeBackdropRef}
                 onClick={handleBackdropClick}
-              />
+              /> */}
             </CSSTransition>
           </>
         )}

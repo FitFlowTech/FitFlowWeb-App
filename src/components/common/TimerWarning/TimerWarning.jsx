@@ -8,17 +8,16 @@ import {
 export default function TimerWarning() {
   return (
     <ContainerDiv>
-      <TitleH2>Hello Fitness Enthusiast!</TitleH2>
+      <TitleH2>Hello  Fitflow twam!</TitleH2>
 
       <TextP>
         In our free hosting world, occasionally your request might take a little
-        longer after inactivity. Stay connected because we&apos;re gearing up
-        for faster responses on your next calorie count or exercise hunt!
+        longer after inactivity.
       </TextP>
 
       <SignatureP>
         Best regards,
-        <br /> The PowerPulse Platform Team
+        <br /> The FiFlex team 
       </SignatureP>
     </ContainerDiv>
   );

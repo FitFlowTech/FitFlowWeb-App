@@ -6,12 +6,12 @@ import {
   CategoriesFieldset,
   CategoryDiv,
   CategoryLabel,
-  CategoryInput,
+  // CategoryInput,
 } from './ExercisesCategories.styled';
 
 import { EXERCISES_CATEGORY } from 'src/utils/constants';
 
-export default function ExercisesCategories({ category, setCategory }) {
+export default function ExercisesCategories({ category }) {
   const path = useResolvedPath();
   const navigate = useNavigate();
   const currentPathNameRef = useRef(path.pathname);
@@ -27,47 +27,25 @@ export default function ExercisesCategories({ category, setCategory }) {
   }, [path.pathname]);
 
   // To check input value
-  const handleOptionChange = event => {
-    setCategory(event.target.value);
-  };
+  // const handleOptionChange = event => {
+  //   setCategory(event.target.value);
+  // };
 
   return (
     <CategoriesFieldset>
       <CategoryDiv>
         <CategoryLabel selected={category === EXERCISES_CATEGORY.BODY_PARTS}>
-          <CategoryInput
+          {/* <CategoryInput
             type="radio"
             value={EXERCISES_CATEGORY.BODY_PARTS}
             checked={category === EXERCISES_CATEGORY.BODY_PARTS}
             onChange={handleOptionChange}
-          />
+          /> */}
           Body parts
         </CategoryLabel>
       </CategoryDiv>
 
-      <CategoryDiv>
-        <CategoryLabel selected={category === EXERCISES_CATEGORY.MUSCLES}>
-          <CategoryInput
-            type="radio"
-            value={EXERCISES_CATEGORY.MUSCLES}
-            checked={category === EXERCISES_CATEGORY.MUSCLES}
-            onChange={handleOptionChange}
-          />
-          Muscles
-        </CategoryLabel>
-      </CategoryDiv>
-
-      <CategoryDiv>
-        <CategoryLabel selected={category === EXERCISES_CATEGORY.EQUIPMENT}>
-          <CategoryInput
-            type="radio"
-            value={EXERCISES_CATEGORY.EQUIPMENT}
-            checked={category === EXERCISES_CATEGORY.EQUIPMENT}
-            onChange={handleOptionChange}
-          />
-          Equipment
-        </CategoryLabel>
-      </CategoryDiv>
+     
     </CategoriesFieldset>
   );
 }

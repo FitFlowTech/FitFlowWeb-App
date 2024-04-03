@@ -71,11 +71,11 @@ export default function SignInForm() {
     }
   };
 
-  const onClickGoogleBtn = () => {
-    window.location.assign(
-      'https://power-pulse-api.onrender.com/api/users/google',
-    );
-  };
+  // const onClickGoogleBtn = () => {
+  //   window.location.assign(
+  //     'https://power-pulse-api.onrender.com/api/users/google',
+  //   );
+  // };
 
   const formik = useFormik({
     initialValues: {
@@ -120,11 +120,15 @@ export default function SignInForm() {
             </div>
           </Inputs>
           <Buttons>
-            <button type="submit">Sign In</button>
+          <button type="submit">Sign In</button>
+
+          </Buttons>
+
+          {/* <Buttons>
             <button type="button" onClick={onClickGoogleBtn} id="google">
               <Icon name={'google'} />
             </button>
-          </Buttons>
+          </Buttons> */}
           <Sign>
             <p>Don’t have an account? </p>
             <Link to="/signup">Sign Up</Link>
